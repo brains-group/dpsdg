@@ -1,6 +1,6 @@
 # Differentially Private Synthetic Data Generation (DPSDG)
 
-![DPSDG overview](dpctgan.png)
+![DPSDG overview](https://raw.githubusercontent.com/brains-group/dpsdg/main/dpctgan.png)
 
 This repository contains the official implementation of the paper "Measuring Privacy Risks and Tradeoffs in Financial Synthetic Data Generation" as seen in TIME workshop of WebConf 2026. The code implements the same specs as the original CTGAN/TVAE model from the `ctgan` package.
 
