@@ -53,9 +53,9 @@ synthetic_data = ctgan.sample(1000)
 **DP-CTGAN** (with differential privacy):
 
 ```python
-from dpsdg.models.dp_ctgan import IterDPCTGAN
+from dpsdg.models.dp_ctgan import DPDPCTGAN
 
-model = IterDPCTGAN(epsilon=1.0, delta=1e-5, epochs=300)
+model = DPDPCTGAN(epsilon=1.0, delta=1e-5, epochs=300)
 model.fit_transformer(real_data, discrete_columns)  # must be called before fit
 model.fit(real_data, discrete_columns)
 synthetic_data = model.sample(1000)
@@ -78,9 +78,9 @@ synthetic_data = tvae.sample(1000)
 **DP-TVAE** (with differential privacy):
 
 ```python
-from dpsdg.models.dp_tvae import IterTVAE
+from dpsdg import DPTVAE
 
-model = IterTVAE(epsilon=1.0, delta=1e-5, epochs=300)
+model = DPTVAE(epsilon=1.0, delta=1e-5, epochs=300)
 model.fit(real_data, discrete_columns)
 synthetic_data = model.sample(1000)
 ```
