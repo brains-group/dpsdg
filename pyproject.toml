@@ -4,7 +4,7 @@ dependencies = ["sdv==1.22.1", "opacus==1.5.4"]
 name = "dpsdg"
 readme = "README.md"
 requires-python = ">= 3.10"
-version = "0.1.1"
+version = "0.1.1b"
 
 [build-system]
 build-backend = "hatchling.build"
